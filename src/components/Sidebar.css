@@ -1,0 +1,54 @@
+.sidebar {
+  width: 30%;
+  height: 100vh;
+  border-right: 1px solid #eee;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.sidebar-header h1 {
+  margin: 0;
+}
+
+.sidebar-notes {
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+}
+
+.sidebar-note {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.sidebar-note:hover {
+  background-color: rgb(243, 249, 223);
+  transition: all .2s ease;
+}
+
+.sidebar-note-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-note p {
+  margin: .5rem 0;
+}
+
+.sidebar-note small {
+  color: #999;
+}
+
+button {
+  background: none;
+  border: none;
+  color: rgb(129, 124, 218);
+  cursor: pointer;
+  padding: .25rem .5rem;
+  height: 32px;
+}
