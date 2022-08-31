@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sidebar.css'
 
-const Sidebar = ({ addNote, deleteNote, notes }) => {
+const Sidebar = ({ addNote, deleteNote, notes, isActive, setIsActive }) => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
@@ -11,8 +11,9 @@ const Sidebar = ({ addNote, deleteNote, notes }) => {
       <div className="sidebar-notes">
         {notes.map((note) => (
           <div
-            className="sidebar-note"
+            className={`sidebar-note ${note.id === isActive && "active"}`}
             key={note.id}
+            onClick={() => setIsActive(note.id)}
           >
             <div className="sidebar-note-title">
               <h2>{note.title}</h2>

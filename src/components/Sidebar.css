@@ -30,6 +30,10 @@
   transition: all .2s ease;
 }
 
+.sidebar-note.active {
+  background-color: rgb(243, 249, 223);
+}
+
 .sidebar-note-title {
   display: flex;
   justify-content: space-between;
