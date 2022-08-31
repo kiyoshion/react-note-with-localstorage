@@ -1,0 +1,45 @@
+.main {
+  width: 70%;
+  height: 100vh;
+}
+
+.main-note-edit,
+.main-note-preview {
+  width: 100%;
+  height: 50vh;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.main-note-edit {
+  padding: 1rem;
+}
+
+.main-note-edit input,
+textarea {
+  display: block;
+  border: none;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.main-note-preview {
+  border-top: 1px solid #eee;
+  overflow-y: scroll;
+}
+
+.preview-title {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.none-note {
+  width: 100%;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  color: #aaa;
+}
