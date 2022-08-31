@@ -19,9 +19,14 @@ function App() {
     console.log(notes);
   }
 
+  const deleteNote = (id) => {
+    const filterNotes = notes.filter((note) => note.id !== id);
+    setNotes(filterNotes);
+  }
+
   return (
     <div className="App">
-      <Sidebar addNote={addNote} notes={notes} />
+      <Sidebar addNote={addNote} deleteNote={deleteNote} notes={notes} />
       <Main />
     </div>
   )
